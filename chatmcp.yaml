@@ -1,0 +1,12 @@
+# ChatMCP 客户端配置
+# 用法：把 mcpServers 段合并进 ChatMCP 的 chatmcp.yaml
+# 注意：command / args / SKILL_DIR 必须改成你本机的绝对路径
+mcpServers:
+  md-skill-checker:
+    # 用装了 mcp 包的解释器，避免 PATH 里的 python 找不到依赖
+    command: D:/ProgramFiles/anaconda3/envs/fastapi_env1/python.exe
+    args:
+      - D:/project/pythonProject/AgentTest/mcp_skill_checker/server.py
+    env:
+      # skill 文档根目录；check_skill_md / scan_skill_dir 的相对路径都基于它
+      SKILL_DIR: D:/project/pythonProject/AgentTest/skills

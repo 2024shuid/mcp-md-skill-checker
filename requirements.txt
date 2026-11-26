@@ -1,0 +1,3 @@
+# 只依赖官方 MCP SDK（已内置 FastMCP），无需 fastmcp 包、无需 uvx
+# 上限 <2：与 langchain-mcp-adapters 0.3.2 对 mcp 的约束保持一致，避免版本冲突
+mcp>=1.24,<2
