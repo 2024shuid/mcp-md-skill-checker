@@ -118,7 +118,7 @@ stdio 模式下服务通过标准输入输出与客户端通信，**不要往 st
 
 ## 接入 LangChain / LangGraph
 
-和项目里 `texts/mcp_text.py` 的写法一致，工具会被自动转成 LangChain Tool：
+工具会被自动转成 LangChain Tool：
 
 ```python
 import sys
